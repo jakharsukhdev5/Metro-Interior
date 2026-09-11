@@ -25,3 +25,6 @@ Dark cinematic luxury with restrained Metro red, warm ivory, bronze accents, edi
 5. Studio/About
 6. Journal
 7. Contact / consultation
+
+## Repository assets
+The Metro logo is versioned as a lightweight SVG based on the supplied brand mark. Interior photography currently uses high-resolution editorial placeholders and can be replaced with the client's real portfolio page by page.
