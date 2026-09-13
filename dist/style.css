@@ -47,3 +47,27 @@ header .brand{flex-shrink:0}main,section{min-width:0}.brand-logo{max-width:100%}
 #enquiry-summary dt{font-size:12px;color:#b8a88e}#enquiry-summary dd{color:#eee5d6}
 @media(max-width:720px){#consultation{padding:38px 28px 30px;border-radius:10px}#consultation h2{font-size:42px}#consultation>.eyebrow{font-size:9px;letter-spacing:2.2px}.consultation-close{top:14px;right:14px}#consultation .form-step{margin:16px 0 25px}#consultation .form-grid{gap:18px}#consultation .form-grid input,#consultation .form-grid select{min-height:48px;padding:12px}#consultation .demo-notice{margin:18px 0}#consultation .form-actions{flex-wrap:wrap}}
 @media(max-width:420px){#consultation{padding:34px 22px 24px}#consultation h2{font-size:38px}#consultation .form-grid{gap:15px}#consultation .form-grid label{gap:7px}#consultation .form-step{margin-bottom:22px}#enquiry-summary{padding:3px 15px}}
+/* A visual introduction, with the same material palette as the site. */
+#consultation{width:min(1000px,94vw);max-width:1000px;padding:0;border-radius:8px;background:#15130f;border-color:#b29a7445;overflow:auto}
+#consultation[open]{display:grid;grid-template-columns:35% 65%;align-items:stretch}
+.consultation-visual{position:relative;min-width:0;overflow:hidden;background:#251d15;min-height:620px;border-right:1px solid #b29a7425}
+.consultation-visual>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:64% center}
+.consultation-visual:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,#0d0c0a20 30%,#0d0c0ae8 100%)}
+.consultation-visual-copy{position:absolute;z-index:1;bottom:34px;left:28px;right:24px}
+.consultation-visual-copy>span{font-size:9px;letter-spacing:2px;color:#e7d2b0;line-height:1.8}
+#consultation .consultation-visual-copy>p{font:36px/1.07 'Cormorant Garamond',Georgia,serif;color:#f2ece1;margin:22px 0 24px;letter-spacing:-.5px}
+.consultation-visual-copy em{color:#d7b894}
+.consultation-visual-copy small{font-size:9px;color:#b6a997;letter-spacing:.5px}
+.consultation-content{position:relative;padding:42px 38px 34px;background:radial-gradient(ellipse at top right,#30271c44,transparent 70%)}
+#consultation .consultation-content>.eyebrow{font-size:10px;letter-spacing:2.5px;color:#d23b43;margin:0 30px 18px 0}
+#consultation h2{font-size:47px;line-height:1.06}
+#consultation .form-step{margin:17px 0 27px}
+#consultation .form-step:before{background:#be2936;width:25px}
+#consultation .form-primary{background:linear-gradient(110deg,#b51d2c,#8a1320);border:1px solid #d3414c70;color:#fff3e6;box-shadow:0 6px 22px #0003;letter-spacing:.6px}
+#consultation .form-primary:hover{background:linear-gradient(110deg,#c52737,#a51b2b)}
+#consultation .form-grid input,#consultation .form-grid select{background:#ffffff02;border-color:#b59b7240}
+#consultation .form-grid label{font-size:13px}
+#consultation .demo-notice{font-size:11px;color:#a79e90}
+#consultation .consultation-close{top:16px;right:16px}
+@media(max-width:800px){#consultation{width:min(620px,94vw)}#consultation[open]{grid-template-columns:1fr}.consultation-visual{min-height:145px;height:145px;border-right:0;border-bottom:1px solid #b29a7425}.consultation-visual>img{object-position:center 56%}.consultation-visual:after{background:linear-gradient(90deg,#0d0c0ae8,#0d0c0a20)}.consultation-visual-copy{left:24px;bottom:18px;right:65px}.consultation-visual-copy>span{font-size:8px}#consultation .consultation-visual-copy>p{font-size:27px;margin:10px 0 0}.consultation-visual-copy small{display:none}.consultation-content{padding:27px 26px 26px}#consultation .consultation-close{position:fixed}#consultation .consultation-close{position:absolute;top:12px;right:12px}#consultation h2{font-size:38px}#consultation .consultation-content>.eyebrow{font-size:9px;margin-bottom:12px}#consultation .form-step{margin:13px 0 22px}}
+@media(max-width:420px){.consultation-content{padding:26px 22px 24px}.consultation-visual{height:120px;min-height:120px}#consultation .consultation-visual-copy>p{font-size:25px}#consultation h2{font-size:35px}#consultation .form-grid{grid-template-columns:1fr 1fr;gap:15px 12px}#consultation .form-grid label:nth-child(3),#consultation .form-grid label:nth-child(4),#consultation .full-field{grid-column:1/-1}}
