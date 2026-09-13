@@ -71,3 +71,38 @@ header .brand{flex-shrink:0}main,section{min-width:0}.brand-logo{max-width:100%}
 #consultation .consultation-close{top:16px;right:16px}
 @media(max-width:800px){#consultation{width:min(620px,94vw)}#consultation[open]{grid-template-columns:1fr}.consultation-visual{min-height:145px;height:145px;border-right:0;border-bottom:1px solid #b29a7425}.consultation-visual>img{object-position:center 56%}.consultation-visual:after{background:linear-gradient(90deg,#0d0c0ae8,#0d0c0a20)}.consultation-visual-copy{left:24px;bottom:18px;right:65px}.consultation-visual-copy>span{font-size:8px}#consultation .consultation-visual-copy>p{font-size:27px;margin:10px 0 0}.consultation-visual-copy small{display:none}.consultation-content{padding:27px 26px 26px}#consultation .consultation-close{position:fixed}#consultation .consultation-close{position:absolute;top:12px;right:12px}#consultation h2{font-size:38px}#consultation .consultation-content>.eyebrow{font-size:9px;margin-bottom:12px}#consultation .form-step{margin:13px 0 22px}}
 @media(max-width:420px){.consultation-content{padding:26px 22px 24px}.consultation-visual{height:120px;min-height:120px}#consultation .consultation-visual-copy>p{font-size:25px}#consultation h2{font-size:35px}#consultation .form-grid{grid-template-columns:1fr 1fr;gap:15px 12px}#consultation .form-grid label:nth-child(3),#consultation .form-grid label:nth-child(4),#consultation .full-field{grid-column:1/-1}}
+/* A simpler, product-like consultation surface. */
+#consultation{width:min(960px,94vw);max-width:960px;background:#1c1c1e;border:1px solid #ffffff16;border-radius:24px;box-shadow:0 32px 100px #0009;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:#f5f5f7}
+#consultation[open]{grid-template-columns:36% 64%}
+#consultation::backdrop{background:#0009;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+.consultation-visual{border-right:0;min-height:610px;background:#252321}
+.consultation-visual:after{background:linear-gradient(180deg,#0000 35%,#000b 100%)}
+.consultation-content{padding:44px 40px 34px;background:#1c1c1e}
+#consultation .consultation-content>.eyebrow{color:#a5a5ab;letter-spacing:1.5px;font-size:10px;font-weight:600;margin-bottom:14px}
+#consultation h2{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:36px;font-weight:600;letter-spacing:-1.25px;line-height:1.12;color:#f5f5f7}
+#consultation .form-step{font-size:12px;color:#99999f;letter-spacing:0;margin:14px 0 28px;gap:10px}
+#consultation .form-step:before{width:6px;height:6px;border-radius:50%;background:#db3447}
+#consultation .consultation-close{top:15px;right:15px;width:30px;height:30px;min-height:30px;background:#343437;border:0;color:#bcbcc1;font-size:23px;line-height:1}
+#consultation .consultation-close:hover{background:#454548;color:#fff}
+#consultation .form-grid{gap:20px 16px}
+#consultation .form-grid label{font-size:12px;color:#c5c5ca;letter-spacing:0;gap:8px;font-weight:500}
+#consultation .form-grid input,#consultation .form-grid select{font-family:inherit;background:#29292c;border:1px solid #ffffff09;border-radius:10px;min-height:50px;padding:13px 14px;color:#f5f5f7;font-size:16px;box-shadow:none}
+#consultation .form-grid input:hover,#consultation .form-grid select:hover{border-color:#ffffff25;background:#2d2d30}
+#consultation .form-grid input:focus,#consultation .form-grid select:focus{border-color:#c65360;background:#2b2b2e;box-shadow:0 0 0 3px #d83b4c22;outline:none}
+#consultation .form-grid select option{background:#29292c}
+#consultation .demo-notice{font-size:11px;line-height:1.55;color:#98989f;margin:20px 0}
+#consultation .form-primary{border:0;background:#c5283c;border-radius:12px;font-family:inherit;font-size:14px;font-weight:600;letter-spacing:-.1px;min-height:50px;color:white;box-shadow:none}
+#consultation .form-primary:hover{background:#d52e43;transform:none}
+#consultation .form-primary:active{background:#b12032;transform:scale(.99)}
+#consultation .form-secondary{border:0;background:#303034;border-radius:12px;font-family:inherit;color:#f5f5f7;font-size:14px;letter-spacing:0}
+#consultation h3{font-family:inherit;font-size:23px;font-weight:600;letter-spacing:-.5px}
+#enquiry-summary{border:0;border-radius:14px;background:#29292c;padding:5px 18px}
+#enquiry-summary>div{border-color:#ffffff12;font-size:14px}#enquiry-summary dt{color:#a6a6ad}#enquiry-summary dd{color:#f5f5f7}
+.consultation-visual-copy{left:26px;right:22px;bottom:30px}
+.consultation-visual-copy>span{font-family:inherit;font-size:9px;letter-spacing:1.8px;color:#e0d9ce}
+#consultation .consultation-visual-copy>p{font-family:inherit;font-size:29px;font-weight:500;line-height:1.15;letter-spacing:-.8px;margin:18px 0 22px;color:#fff}
+.consultation-visual-copy em{font-style:normal;color:#cfc5b7}
+.consultation-visual-copy small{font-size:9px;color:#aaa49c}
+@media(max-width:800px){#consultation{width:min(590px,94vw);border-radius:20px}#consultation[open]{grid-template-columns:1fr}.consultation-visual{height:132px;min-height:132px}.consultation-content{padding:28px}.consultation-visual-copy{left:25px;bottom:19px}.consultation-visual:after{background:linear-gradient(90deg,#000b,#0001)}#consultation .consultation-visual-copy>p{font-size:23px;margin:8px 0 0}#consultation h2{font-size:31px}#consultation .form-grid{gap:17px 14px}#consultation .form-step{margin-bottom:23px}}
+@media(max-width:420px){.consultation-content{padding:26px 22px 23px}#consultation h2{font-size:29px}.consultation-visual{min-height:110px;height:110px}#consultation .consultation-visual-copy>p{font-size:21px}#consultation .form-grid input,#consultation .form-grid select{min-height:47px;padding:11px 12px}#consultation .demo-notice{margin:17px 0}}
+@media(prefers-reduced-motion:no-preference){#consultation[open]{animation:consultation-arrive .2s ease-out}@keyframes consultation-arrive{from{opacity:0;transform:translateY(8px) scale(.985)}to{opacity:1;transform:none}}}
