@@ -18,3 +18,32 @@ header .brand{flex-shrink:0}main,section{min-width:0}.brand-logo{max-width:100%}
 .home-page .home-section{padding-top:44px;padding-bottom:44px}.home-page .section-heading{margin-bottom:26px}.home-page .feature-picture img{min-height:280px;max-height:340px}.home-page .hero,.home-page .hero-panel{min-height:700px}.home-page .home-enquiry h2{font-size:48px}.talk{background:transparent}.hero-contact{background:none;border:0;padding:0;cursor:pointer}.consultation-close{position:absolute;right:16px;top:12px;background:none;border:0;font-size:30px;width:44px;height:44px}#consultation{width:min(620px,92vw);max-width:620px;padding:36px;max-height:90vh;max-height:90dvh;overflow:auto}#consultation h2{font-size:40px}#consultation .form-step{font-size:13px;color:var(--gold);margin:12px 0 24px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.form-grid label{display:flex;flex-direction:column;gap:9px;font-size:14px}.full-field{grid-column:1/-1}.form-grid input,.form-grid select{width:100%;min-width:0;background:#0f0d0b;color:var(--cream);border:1px solid #75644f;border-radius:3px;padding:12px;font:16px Manrope,sans-serif;min-height:48px;color-scheme:dark}.form-grid input:focus,.form-grid select:focus{outline:2px solid var(--gold);outline-offset:2px}#consultation .demo-notice{font-size:12px;line-height:1.6;margin:20px 0;color:var(--muted)}.form-primary,.form-secondary{border:1px solid var(--gold);padding:14px 20px;min-height:48px;border-radius:4px;font-size:14px}.form-primary{background:#a40e1c;border-color:#d22a37;color:white}.form-primary:hover{background:#c01324}.form-secondary{background:transparent}.form-actions{display:flex;gap:12px;justify-content:space-between}#enquiry-summary{margin:22px 0}#enquiry-summary>div{display:grid;grid-template-columns:110px 1fr;gap:15px;border-bottom:1px solid var(--border);padding:13px 0;font-size:15px}#enquiry-summary dt{color:var(--muted)}#enquiry-summary dd{margin:0;overflow-wrap:anywhere}#consultation h3{font-size:28px}#consultation [hidden]{display:none!important}body:has(#consultation[open]){overflow:hidden}
 @media(max-width:720px){.home-page .hero,.home-page .hero-panel{min-height:0}.home-page .home-section{padding-block:32px}.home-page .home-enquiry h2{font-size:38px}#consultation{padding:30px 22px}.form-grid{gap:15px}.form-grid label{font-size:13px}.form-actions{flex-wrap:wrap}.form-primary{flex:1}#consultation h2{font-size:32px}}
 @media(max-width:420px){.form-grid{grid-template-columns:1fr}.full-field{grid-column:auto}#enquiry-summary>div{grid-template-columns:1fr;gap:4px}}
+/* Consultation: quiet, tailored presentation. */
+#consultation{width:min(680px,94vw);max-width:680px;padding:48px 52px 42px;background:radial-gradient(ellipse at 0 0,#30281e55,transparent 65%),#171510;border:1px solid #a68a5c66;border-radius:12px;box-shadow:0 40px 140px #000b,0 0 0 6px #ffffff03;outline:none;color:#f2ece1}
+#consultation::backdrop{background:#080705c9;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+#consultation>.eyebrow{font-size:10px;font-weight:500;letter-spacing:3px;color:#c8ab7d;margin-bottom:20px;padding-right:26px}
+#consultation h2{font-size:52px;line-height:1.02;letter-spacing:-1.2px;font-weight:400}
+#consultation .form-step{display:flex;align-items:center;gap:15px;font-size:12px;color:#a79b88;margin:18px 0 30px;letter-spacing:.4px}
+#consultation .form-step:before{content:'';display:block;width:32px;height:1px;background:#c4a371}
+.consultation-close{top:20px;right:20px;border:1px solid #c8ab7d25;border-radius:50%;font-size:24px;color:#bfb4a2;width:36px;height:36px;min-height:36px;background:#ffffff02;transition:background .2s,color .2s}
+.consultation-close:hover{background:#c8ab7d18;color:#fff}
+#consultation .form-grid{gap:23px 24px}
+#consultation .form-grid label{font-size:12px;letter-spacing:.35px;color:#c9c0b1;gap:10px}
+#consultation .form-grid input,#consultation .form-grid select{border:1px solid #b59b7233;background:#ffffff03;border-radius:5px;padding:14px 15px;min-height:52px;font-size:16px;color:#eee5d6;transition:border-color .2s,background .2s,box-shadow .2s}
+#consultation .form-grid input:hover,#consultation .form-grid select:hover{border-color:#b59b7270}
+#consultation .form-grid input:focus,#consultation .form-grid select:focus{outline:none;border-color:#c8ab7d;background:#c8ab7d08;box-shadow:0 0 0 3px #c8ab7d12}
+#consultation .form-grid select{cursor:pointer;padding-right:36px}
+#consultation .form-grid select option{background:#211d17;color:#eee5d6}
+#consultation .demo-notice{color:#a69b8b;font-size:11px;line-height:1.7;margin:22px 0;max-width:460px}
+#consultation .form-primary{width:100%;background:linear-gradient(110deg,#d7c09a,#bfa075);color:#20190f;border:1px solid #ddc49b;border-radius:5px;min-height:52px;padding:15px 22px;font-size:12px;font-weight:600;letter-spacing:1px;box-shadow:0 5px 18px #0002;transition:filter .2s,transform .2s}
+#consultation .form-primary:hover{background:linear-gradient(110deg,#e5cda7,#ccad82);transform:translateY(-1px)}
+#consultation .form-primary:active{transform:translateY(0)}
+#consultation button:focus-visible{outline:2px solid #e0c396;outline-offset:4px}
+#consultation .form-secondary{min-height:52px;border:1px solid #b59b7255;border-radius:5px;color:#d6c7af;font-size:12px;letter-spacing:.4px;padding:14px 20px;white-space:nowrap}
+#consultation .form-actions{gap:14px;flex-wrap:nowrap}#consultation .form-actions .form-primary{width:auto;flex:1}
+#consultation h3{font-size:32px;letter-spacing:-.4px}
+#enquiry-summary{padding:6px 20px;border:1px solid #b59b7225;background:#ffffff02;border-radius:6px}
+#enquiry-summary>div{padding:16px 0;border-color:#b59b7225;font-size:14px}#enquiry-summary>div:last-child{border-bottom:0}
+#enquiry-summary dt{font-size:12px;color:#b8a88e}#enquiry-summary dd{color:#eee5d6}
+@media(max-width:720px){#consultation{padding:38px 28px 30px;border-radius:10px}#consultation h2{font-size:42px}#consultation>.eyebrow{font-size:9px;letter-spacing:2.2px}.consultation-close{top:14px;right:14px}#consultation .form-step{margin:16px 0 25px}#consultation .form-grid{gap:18px}#consultation .form-grid input,#consultation .form-grid select{min-height:48px;padding:12px}#consultation .demo-notice{margin:18px 0}#consultation .form-actions{flex-wrap:wrap}}
+@media(max-width:420px){#consultation{padding:34px 22px 24px}#consultation h2{font-size:38px}#consultation .form-grid{gap:15px}#consultation .form-grid label{gap:7px}#consultation .form-step{margin-bottom:22px}#enquiry-summary{padding:3px 15px}}
