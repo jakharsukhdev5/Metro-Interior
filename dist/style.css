@@ -111,3 +111,22 @@ header .brand{flex-shrink:0}main,section{min-width:0}.brand-logo{max-width:100%}
 @media(min-width:721px) and (max-width:1050px){.home-page .hero-panel{width:58%}.home-page h1{font-size:clamp(49px,6.1vw,64px)}.home-page .feature-story{padding:25px}.home-page .feature-layout{grid-template-columns:1.15fr 1fr}}
 @media(max-width:720px){.home-page header .brand{width:114px}.home-page .hero-panel{width:100%;padding:163px 6% 32px;border-radius:0;min-height:0;background:#0e0d0b}.home-page .hero{min-height:0}.home-page h1{font-size:clamp(43px,9.3vw,63px);line-height:1.02;letter-spacing:-1.2px}.home-page .hero .eyebrow{font-size:9px;letter-spacing:2.4px;margin-bottom:20px}.home-page .intro{font-size:14px;max-width:360px}.home-page .hero-photo{left:auto;height:290px;background-position:62% center}.home-page .hero-contact{margin-left:65px}.home-page .explore{gap:20px;font-size:10px}.home-page .home-section{padding:35px 6%}.home-page .section-heading{gap:15px;margin-bottom:25px}.home-page .home-section h2{font-size:35px}.home-page .feature-layout,.home-page .home-faq{grid-template-columns:1fr}.home-page .feature-picture img{height:250px;min-height:250px;max-height:250px}.home-page .feature-story{padding:25px}.home-page .feature-story h3{font-size:32px}.home-page .home-service-grid h3{font-size:27px}.home-page .home-service-grid p{font-size:13px}.home-page .service-action{font-size:10px}.home-page .home-enquiry h2{font-size:40px}.home-page .home-enquiry{padding-block:38px}.home-page .home-faq{gap:18px}.home-page .home-service-grid>a:nth-child(even){padding-right:0}.home-page footer{gap:20px}}
 @media(prefers-reduced-motion:reduce){.home-page .feature-picture img,.home-page .home-enquiry .contact-button{transition:none;transform:none!important}}
+/* Full-width canvas and one shared header alignment across every page. */
+html,body{width:100%;max-width:none;margin:0}
+:root{--page-gutter:clamp(22px,6vw,140px)}
+body header,body.home-page header{padding:25px var(--page-gutter);display:grid;grid-template-columns:145px 1fr 175px;align-items:center;gap:24px}
+body header .brand,body.home-page header .brand{width:128px;justify-self:start;margin:0;flex-shrink:0}
+body header .brand-logo{display:block;width:100%;height:auto;max-width:100%;object-fit:contain}
+body header nav{justify-self:center;align-items:center;gap:clamp(20px,2vw,36px)}
+body header nav a,body.home-page header nav a{font-size:11px;letter-spacing:1.6px}
+body header .talk{justify-self:end;white-space:nowrap}
+body.inner-page header{min-height:162px}
+body footer,body.home-page footer{padding-inline:var(--page-gutter)}
+body .footer-brand,body.home-page .footer-brand{width:100px}
+body.home-page .hero-panel{padding-left:var(--page-gutter)}
+body.home-page .home-section{padding-left:var(--page-gutter);padding-right:var(--page-gutter)}
+@media(min-width:2000px){.home-page .hero,.home-page .hero-panel{min-height:800px}.home-page .hero-panel{padding-top:215px}.home-page h1{font-size:88px}}
+@media(min-width:721px) and (max-width:1000px){body header,body.home-page header{grid-template-columns:110px 1fr 145px;gap:15px;padding-inline:4%}body header .brand,body.home-page header .brand{width:110px}body header nav{gap:16px}body header nav a,body.home-page header nav a{font-size:10px;letter-spacing:1px}body header .talk{font-size:10px;padding-left:15px;gap:13px}body header .talk span{width:42px;height:42px}}
+@media(max-width:720px){body header,body.home-page header{padding:22px var(--page-gutter);grid-template-columns:1fr auto;gap:20px;align-items:center}body header .brand,body.home-page header .brand{width:110px}body header .menu{display:flex;justify-self:end;min-height:44px}body header .talk{display:none}body header nav{position:absolute;top:125px;right:var(--page-gutter);left:auto;min-width:190px;display:none;align-items:stretch;gap:8px;z-index:10;box-shadow:0 15px 40px #0008}body header nav.open{display:flex}body header nav a,body.home-page header nav a{font-size:12px;letter-spacing:1.4px}body.inner-page header{min-height:140px}body.home-page .hero-panel{padding-top:166px}body .footer-brand,body.home-page .footer-brand{width:90px}}
+@media(min-width:721px){body header,body.home-page header{min-height:162px}}
+body.home-page header{border-bottom:1px solid transparent}
