@@ -8,3 +8,5 @@ out
 # Local design checks and scratch assets
 work/
 .sites-runtime/
+
+.vercel/
