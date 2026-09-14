@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" role="img" aria-labelledby="title desc">
+  <title id="title">Metro Interior Decorators</title>
+  <desc id="desc">Metro monogram and wordmark based on the supplied brand mark.</desc>
+  <g fill="none" stroke="#e30613" stroke-width="14" stroke-linecap="square" stroke-linejoin="round">
+    <path d="M178 138V28c38-2 61 28 83 59 20 29 38 51 59 51 21 0 39-22 59-51 22-31 45-61 83-59v110"/>
+    <path d="M178 138v58c0 22 12 36 42 36h18M462 138v58c0 22-12 36-42 36h-18M320 138c-22 17-57 39-57 78v16M320 138c22 17 57 39 57 78v16"/>
+  </g>
+  <text x="320" y="267" text-anchor="middle" fill="#f2ece2" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="300" letter-spacing="22">METRO</text>
+  <text x="320" y="295" text-anchor="middle" fill="#f2ece2" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" letter-spacing="8">INTERIOR DECORATORS</text>
+</svg>
