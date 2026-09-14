@@ -1,5 +1,32 @@
 # Metro Interior Decorators
 
+## Current website
+
+The latest reviewed website is in `dist/`. It includes dedicated Home, About,
+Services, Projects and Contact pages, the transparent Metro logo, and a responsive
+consultation dialog with validation, review/edit and demo submission.
+
+Run locally from the repository root:
+
+```bash
+python3 -m http.server 4173 --directory dist
+```
+
+Open http://localhost:4173/. No build or package installation is required for this version.
+Consultation submissions are demo-only: no customer details are sent or stored.
+Phone and email destinations have not yet been configured.
+
+The `.openai/hosting.json` manifest identifies the existing Sites project.
+Syncing to GitHub does not itself update the live Sites deployment.
+
+## Earlier Next.js implementation
+
+The existing `app/`, `public/`, package configuration and `docs/` are preserved
+from the earlier GitHub version. The instructions below refer to that implementation,
+not the latest static website in `dist/`.
+
+### Original project notes
+
 Premium website for Metro Interior Decorators.
 
 ## Stack
