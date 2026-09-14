@@ -130,3 +130,10 @@ body.home-page .home-section{padding-left:var(--page-gutter);padding-right:var(-
 @media(max-width:720px){body header,body.home-page header{padding:22px var(--page-gutter);grid-template-columns:1fr auto;gap:20px;align-items:center}body header .brand,body.home-page header .brand{width:110px}body header .menu{display:flex;justify-self:end;min-height:44px}body header .talk{display:none}body header nav{position:absolute;top:125px;right:var(--page-gutter);left:auto;min-width:190px;display:none;align-items:stretch;gap:8px;z-index:10;box-shadow:0 15px 40px #0008}body header nav.open{display:flex}body header nav a,body.home-page header nav a{font-size:12px;letter-spacing:1.4px}body.inner-page header{min-height:140px}body.home-page .hero-panel{padding-top:166px}body .footer-brand,body.home-page .footer-brand{width:90px}}
 @media(min-width:721px){body header,body.home-page header{min-height:162px}}
 body.home-page header{border-bottom:1px solid transparent}
+/* Metro pointer: fine-pointer devices only. */
+.metro-cursor{position:fixed;left:0;top:0;width:8px;height:8px;border-radius:50%;background:#ee2438;pointer-events:none;z-index:2147483647;opacity:0;transform:translate(-50%,-50%);box-shadow:0 0 12px #ed21393b}
+.metro-cursor-ring{position:fixed;left:0;top:0;width:32px;height:32px;border:1px solid #ee243870;border-radius:50%;pointer-events:none;z-index:2147483646;opacity:0;transform:translate(-50%,-50%);transition:width .2s,height .2s,border-color .2s}
+.metro-cursor-wave{position:fixed;width:16px;height:16px;border:1px solid #ee243870;border-radius:50%;pointer-events:none;z-index:2147483645;animation:metro-wave .65s ease-out forwards}
+@keyframes metro-wave{from{opacity:.55;transform:translate(-50%,-50%) scale(.5)}to{opacity:0;transform:translate(-50%,-50%) scale(2.8)}}
+@media(hover:hover) and (pointer:fine){html.metro-cursor-on,html.metro-cursor-on *{cursor:none!important}}
+@media(prefers-reduced-motion:reduce){.metro-cursor-wave{display:none}.metro-cursor-ring{transition:none}}
